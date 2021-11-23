@@ -1,0 +1,19 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "projet-3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sovlo1/RaphaelAlves_3_23112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sovlo1/RaphaelAlves_3_23112021/issues"
+  },
+  "homepage": "https://github.com/Sovlo1/RaphaelAlves_3_23112021#readme"
+}
