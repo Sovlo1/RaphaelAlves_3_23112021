@@ -12,11 +12,36 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: "shrikhand", "montserrat";
+}
+
+p {
+    font-size: 21px;
+}
+
+ul a {
+    text-decoration: none;
+    color: $white;
+}
+
+ul {
+    font-size: 21px;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0 0 10px 0;
+}
+
 .main {
     max-width: 500px;
     margin: auto;
-}
-
-img {
-    width: 400px;
 }

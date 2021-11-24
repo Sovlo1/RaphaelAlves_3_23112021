@@ -1,8 +1,12 @@
+@import 'utilities/variables';
+
 @import 'base/base';
 @import 'base/normalize';
 
-@import 'utilities/variables';
+
 
 @import 'components/header';
 @import 'components/about';
 @import 'components/howto';
+@import 'components/restaurants';
+@import 'components/footer';

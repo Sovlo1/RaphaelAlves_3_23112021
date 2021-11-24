@@ -12,13 +12,38 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: lighter;
+  font-family: "shrikhand", "montserrat";
+}
+
+p {
+  font-size: 21px;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  font-size: 21px;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 10px 0;
+}
+
 .main {
   max-width: 500px;
   margin: auto;
-}
-
-img {
-  width: 400px;
 }
 
 header {
@@ -53,7 +78,7 @@ header {
 }
 .about__discover {
   background-color: #f2f2f2;
-  padding: 50px 0 50px 0;
+  padding: 50px 0 70px 0;
 }
 .about__discover p {
   margin: 15px 40px 0 40px;
@@ -77,8 +102,8 @@ header {
 }
 
 .howto {
-  width: 95%;
-  margin: 50px auto 50px auto;
+  width: 90%;
+  margin: 70px auto 70px auto;
 }
 .howto h1 {
   margin-bottom: 10px;
@@ -110,6 +135,46 @@ header {
   margin: 0 35px 0 35px;
   color: gray;
   font-size: 24px;
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+  width: auto;
+  padding: 70px 5% 70px 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 20px auto;
+}
+.card__img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.card__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0px 6px 4px 3px #E3E3E3;
+}
+.card__about--icon {
+  font-size: 28px;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  width: auto;
+  padding: 10px 5% 20px 5%;
+}
+.footer__icon {
+  margin: 0 20px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
