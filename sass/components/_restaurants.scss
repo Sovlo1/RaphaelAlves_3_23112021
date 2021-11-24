@@ -13,6 +13,18 @@
         height: 200px;
         width: 100%;
         border-radius: 15px 15px 0 0;
+        &--1 {
+            object-position: 0% 100%;
+        }
+        &--2 {
+            object-position: 0% 60%;
+        }
+        &--3 {
+            object-position: 0% 90%;
+        }
+        &--4 {
+            object-position: 0% 100%;
+        }
     }
     &__about {
         display: flex;
