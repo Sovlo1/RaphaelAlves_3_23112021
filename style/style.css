@@ -23,7 +23,7 @@ img {
 
 header {
   width: 100%;
-  box-shadow: 0px 1px 10px 0px #6b6b6b;
+  box-shadow: 0px 1px 10px 0px #b1b1b1;
 }
 
 .logo {
@@ -69,11 +69,47 @@ header {
   font-size: 21px;
   margin: 30px 0 0 0;
   border: none;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 32px;
+  border-radius: 32px 32px 32px 32px;
   box-shadow: 0px 6px 4px 3px #E3E3E3;
+}
+.about__button:hover {
+  cursor: pointer;
+}
+
+.howto {
+  width: 95%;
+  margin: 50px auto 50px auto;
+}
+.howto h1 {
+  margin-bottom: 10px;
+}
+.howto__button {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 30px auto 30px auto;
+}
+.howto__button--number {
+  background-color: #9356DC;
+  padding: 5px 11px 5px 11px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.howto__button--about {
+  width: 100%;
+  margin-left: -15px;
+  padding: 35px 0 35px 0;
+  border-radius: 32px 32px 32px 32px;
+  box-shadow: 0px 5px 10px 3px #E3E3E3;
+  position: relative;
+  z-index: -1;
+  background-color: #fafafa;
+}
+.howto__button--icon {
+  margin: 0 35px 0 35px;
+  color: gray;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
