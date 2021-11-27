@@ -26,6 +26,18 @@
     }
     &__link {
         display: block;
+        color: inherit;
+    }
+    &__new {
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        background-color: $color-tertiary;
+        padding: 8px 20px 8px 20px;
+        font-size: 21px;
+        font-weight: bold;
+        color: darken($color: $color-tertiary, $amount: 35);
+
     }
     &__img {
         object-fit: cover;
@@ -55,21 +67,21 @@
         box-shadow: 0px 6px 4px 3px #E3E3E3;
         &--button {
             position: absolute;
-            bottom: 10%;
+            bottom: 11%;
             right: 5%;
             background-color: $background;
             border: none;
         }
         &--icon {
             position: absolute;
-            font-size: 28px;
+            font-size: 32px;
             &:hover {
                 color: $color-primary;
             }
             &--active {
                 position: relative;
                 cursor: pointer;
-                font-size: 28px;
+                font-size: 32px;
                 opacity: 0;
                 &:active {
                     opacity: 1;
