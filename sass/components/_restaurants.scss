@@ -37,7 +37,7 @@
         font-size: 21px;
         font-weight: bold;
         color: darken($color: $color-tertiary, $amount: 35);
-
+        border-radius: 5px;
     }
     &__img {
         object-fit: cover;
