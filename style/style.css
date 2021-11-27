@@ -46,8 +46,13 @@ li {
 }
 
 .main {
-  max-width: 500px;
+  max-width: 768px;
   margin: auto;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    max-width: 1024px;
+  }
 }
 
 header {
@@ -146,11 +151,26 @@ header {
   width: auto;
   padding: 70px 5% 70px 5%;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .card {
-  display: flex;
-  flex-direction: column;
+  background-color: #ffffff;
   margin: 20px auto 20px auto;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 48%;
+  }
+}
+.card__link {
+  position: relative;
+  z-index: 1;
+  color: inherit;
 }
 .card__img {
   object-fit: cover;
@@ -159,16 +179,16 @@ header {
   border-radius: 15px 15px 0 0;
 }
 .card__img--1 {
-  object-position: 0% 100%;
+  object-position: 0% 70%;
 }
 .card__img--2 {
   object-position: 0% 60%;
 }
 .card__img--3 {
-  object-position: 0% 90%;
+  object-position: 0% 80%;
 }
 .card__img--4 {
-  object-position: 0% 100%;
+  object-position: 0% 80%;
 }
 .card__about {
   display: flex;
@@ -179,14 +199,27 @@ header {
   border-radius: 0 0 15px 15px;
   box-shadow: 0px 6px 4px 3px #E3E3E3;
 }
+.card__about--icons {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
 .card__about--icon {
+  position: absolute;
   font-size: 28px;
 }
 .card__about--icon:hover {
   color: #9356DC;
 }
-.card__about--icon:active {
-  fill: #9356DC;
+.card__about--icon--active {
+  position: relative;
+  cursor: pointer;
+  font-size: 28px;
+  opacity: 0;
+}
+.card__about--icon--active:active {
+  opacity: 1;
+  color: #9356DC;
 }
 
 .footer {
@@ -194,6 +227,12 @@ header {
   color: #ffffff;
   width: auto;
   padding: 10px 5% 20px 5%;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer__icon {
   margin: 0 20px 0 0;

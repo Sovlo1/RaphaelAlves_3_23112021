@@ -1,46 +1,72 @@
 .restaurants {
-    background-color: darken($color: $white, $amount: 5);
+    background-color: darken($color: $background, $amount: 5);
     width: auto;
     padding: 70px 5% 70px 5%;
+    &__cards {
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
+    background-color: $background;
     margin: 20px auto 20px auto;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 48%;
+    }
+    &__link {
+        position: relative;
+        z-index: 1;
+        color: inherit;
+    }
     &__img {
         object-fit: cover;
         height: 200px;
         width: 100%;
         border-radius: 15px 15px 0 0;
         &--1 {
-            object-position: 0% 100%;
+            object-position: 0% 70%;
         }
         &--2 {
             object-position: 0% 60%;
         }
         &--3 {
-            object-position: 0% 90%;
+            object-position: 0% 80%;
         }
         &--4 {
-            object-position: 0% 100%;
+            object-position: 0% 80%;
         }
     }
     &__about {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $white;
+        background-color: $background;
         padding: 20px 20px 20px 20px;
         border-radius: 0 0 15px 15px;
         box-shadow: 0px 6px 4px 3px #E3E3E3;
+        &--icons {
+            position: relative;
+            z-index: 2;
+            pointer-events: none;
+        }
         &--icon {
+            position: absolute;
             font-size: 28px;
             &:hover {
                 color: $color-primary;
             }
-            &:active {
-                fill: $color-primary;
+            &--active {
+                position: relative;
+                cursor: pointer;
+                font-size: 28px;
+                opacity: 0;
+                &:active {
+                    opacity: 1;
+                    color: $color-primary;
+                }
             }
         }
     }
