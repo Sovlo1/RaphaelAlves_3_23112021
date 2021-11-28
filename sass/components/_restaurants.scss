@@ -3,11 +3,11 @@
     width: auto;
     padding: 70px 5% 70px 5%;
     &__cards {
-        @media screen and (min-width: 769px) and (max-width: 1024px) {
+        @include tablet {
             display: flex;
             flex-wrap: wrap;
         }
-        @media screen and (min-width: 1025px) {
+        @include desktop {
             display: flex;
             flex-wrap: wrap;
         }
@@ -18,10 +18,11 @@
     position: relative;
     background-color: $background;
     margin: 20px auto 20px auto;
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    border-radius: 15px 15px 0 0;
+    @include tablet {
         width: 48%;
     }
-    @media screen and (min-width: 1025px) {
+    @include desktop {
         width: 48%;
     }
     &__link {
@@ -55,6 +56,9 @@
         }
         &--4 {
             object-position: 0% 80%;
+        }
+        @include desktop {
+            height: 350px;
         }
     }
     &__about {

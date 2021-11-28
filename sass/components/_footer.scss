@@ -3,13 +3,13 @@
     color: $background;
     width: auto;
     padding: 10px 5% 20px 5%;
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @include tablet {
         ul {
             display: flex;
             justify-content: space-between;
         }
     }
-    @media screen and (min-width: 1025px) {
+    @include desktop {
         ul {
             display: flex;
             justify-content: space-between;
