@@ -1,0 +1,18 @@
+@keyframes animation-howto {
+    0% {
+    transform: translateX(-120%);
+    }
+}
+
+@keyframes animation-heart {
+    0% {
+        transform: scale(0.8);
+    }
+    33% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1.2);
+        color: $color-secondary;
+    }
+}

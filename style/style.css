@@ -1,3 +1,20 @@
+@keyframes animation-howto {
+  0% {
+    transform: translateX(-120%);
+  }
+}
+@keyframes animation-heart {
+  0% {
+    transform: scale(0.8);
+  }
+  33% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1.2);
+    color: #FF79DA;
+  }
+}
 body {
   font-family: "Roboto", "montserrat";
   margin: 0;
@@ -115,6 +132,7 @@ header {
   color: inherit;
 }
 .about__button:hover {
+  background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
   cursor: pointer;
 }
 
@@ -124,6 +142,12 @@ header {
 }
 .howto h1 {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1025px) {
+  .howto__buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .howto__button {
   display: flex;
@@ -147,6 +171,11 @@ header {
   position: relative;
   z-index: -1;
   background-color: #fafafa;
+}
+@media screen and (min-width: 1025px) {
+  .howto__button--about {
+    padding-right: 30px;
+  }
 }
 .howto__button--icon {
   margin: 0 35px 0 35px;
@@ -242,22 +271,25 @@ header {
   background-color: #ffffff;
   border: none;
 }
+@media screen and (min-width: 1025px) {
+  .card__about--button {
+    bottom: 8%;
+  }
+}
 .card__about--icon {
-  position: absolute;
-  font-size: 32px;
-}
-.card__about--icon:hover {
-  color: #9356DC;
-}
-.card__about--icon--active {
-  position: relative;
   cursor: pointer;
   font-size: 32px;
-  opacity: 0;
+  color: #ffffff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
 }
-.card__about--icon--active:active {
-  opacity: 1;
-  color: #9356DC;
+.card__about--icon:hover {
+  -webkit-text-stroke-color: #9356DC;
+}
+.card__about--icon:active {
+  -webkit-text-stroke-color: #ffffff;
+  animation: animation-heart 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .footer {

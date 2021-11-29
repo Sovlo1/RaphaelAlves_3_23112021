@@ -75,23 +75,25 @@
             right: 5%;
             background-color: $background;
             border: none;
+            @include desktop {
+                bottom: 8%;
+            }
         }
         &--icon {
-            position: absolute;
+            cursor: pointer;
             font-size: 32px;
+            color: $background;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
             &:hover {
-                color: $color-primary;
+                -webkit-text-stroke-color: $color-primary;
             }
-            &--active {
-                position: relative;
-                cursor: pointer;
-                font-size: 32px;
-                opacity: 0;
-                &:active {
-                    opacity: 1;
-                    color: $color-primary;
-                }
+            &:active {
+                -webkit-text-stroke-color: $background;
+                animation: animation-heart 0.5s;
+                animation-fill-mode: forwards;
             }
         }
     }
 }
+

@@ -4,6 +4,12 @@
     h1 {
         margin-bottom: 10px;
     }
+    &__buttons {
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
     &__button {
         display: flex;
         align-items: center;
@@ -25,6 +31,9 @@
             position: relative;
             z-index: -1;
             background-color: darken($color: $background, $amount: 2);
+            @include desktop {
+                padding-right: 30px;
+            }
         }
         &--icon {
             margin: 0 35px 0 35px;
