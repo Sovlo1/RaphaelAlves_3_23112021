@@ -4,15 +4,18 @@
     }
 }
 
-@keyframes animation-heart {
+@keyframes fill-like {
     0% {
-        transform: scale(0.8);
+        transform-origin: bottom;
+        transform: scale(0);
+        color: $color-primary;
     }
-    33% {
-        transform: scale(1.7);
+    66% {
+        transform: scale(1.1);
+        color: $color-primary;
     }
     100% {
-        transform: scale(1.2);
-        color: $color-secondary;
+        transform: scale(1);
+        color: $color-primary;
     }
 }

@@ -63,37 +63,38 @@
     }
     &__about {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         background-color: $background;
         padding: 20px 20px 20px 20px;
         border-radius: 0 0 15px 15px;
         box-shadow: 0px 6px 4px 3px #E3E3E3;
         &--button {
+            cursor: pointer;
             position: absolute;
             bottom: 11%;
             right: 5%;
-            background-color: $background;
-            border: none;
             @include desktop {
                 bottom: 8%;
             }
         }
         &--icon {
-            cursor: pointer;
-            font-size: 32px;
-            color: $background;
-            -webkit-text-stroke-width: 3px;
-            -webkit-text-stroke-color: rgb(0, 0, 0);
-            &:hover {
-                -webkit-text-stroke-color: $color-primary;
+            &--solid {
+                font-size: 32px;
+                background-color: $background;
+                color: transparent;
             }
-            &:active {
-                -webkit-text-stroke-color: $background;
-                animation: animation-heart 0.5s;
-                animation-fill-mode: forwards;
+            &--regular {
+                font-size: 32px;
+                color: black;
             }
-        }
+        }    
     }
 }
 
+.fa-stack {
+    &:hover > .card__about--icon--regular {
+        color: $color-primary;
+    }
+    &:active > .card__about--icon--solid {
+        animation: fill-like 0.5s forwards;
+    }
+}
