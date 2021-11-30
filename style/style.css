@@ -136,8 +136,8 @@ header {
   color: inherit;
 }
 .about__button:hover {
-  transition: 0.5s;
-  background-color: #a16be0;
+  transition: 1s;
+  background-color: #ae80e5;
   box-shadow: 0px 6px 4px 3px #d4d4d4;
   cursor: pointer;
 }
