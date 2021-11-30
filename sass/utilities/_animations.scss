@@ -19,3 +19,24 @@
         color: $color-primary;
     }
 }
+
+@keyframes loading-page {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0%{
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
