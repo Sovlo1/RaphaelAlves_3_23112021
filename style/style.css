@@ -224,7 +224,7 @@ header {
 @media screen and (min-width: 1025px) {
   .howto__buttons {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .howto__button {
@@ -234,11 +234,22 @@ header {
   font-weight: bold;
   margin: 30px auto 30px auto;
 }
+@media screen and (min-width: 1025px) {
+  .howto__button {
+    font-size: 17px;
+    margin: 30px 0 30px 0;
+  }
+}
 .howto__button--number {
   background-color: #9356DC;
   padding: 5px 11px 5px 11px;
   border-radius: 50%;
   color: #ffffff;
+}
+@media screen and (min-width: 1025px) {
+  .howto__button--number {
+    font-size: 17px;
+  }
 }
 .howto__button--about {
   width: 100%;
@@ -259,6 +270,12 @@ header {
   margin: 0 35px 0 35px;
   color: gray;
   font-size: 24px;
+}
+@media screen and (min-width: 1025px) {
+  .howto__button--icon {
+    font-size: 17px;
+    margin: 0 20px 0 30px;
+  }
 }
 
 .restaurants {
