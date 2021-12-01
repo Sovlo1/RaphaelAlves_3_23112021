@@ -374,13 +374,10 @@ header {
   width: auto;
   padding: 10px 5% 20px 5%;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 @media screen and (min-width: 1025px) {
+  .footer {
+    text-align: center;
+  }
   .footer ul {
     display: flex;
     justify-content: space-between;

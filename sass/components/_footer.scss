@@ -3,13 +3,8 @@
     color: $background;
     width: auto;
     padding: 10px 5% 20px 5%;
-    @include tablet {
-        ul {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
     @include desktop {
+        text-align: center;
         ul {
             display: flex;
             justify-content: space-between;
