@@ -1,6 +1,11 @@
 header {
     width: 100%;
+    position: relative;
     box-shadow: 0px 1px 10px 0px #b1b1b1;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .logo {
@@ -9,4 +14,11 @@ header {
     display: block;
     margin: 0 auto 0 auto;
     padding: 20px 0 20px 0;
+}
+
+.home {
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
