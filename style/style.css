@@ -443,5 +443,55 @@ header a {
   font-weight: lighter;
   font-family: "shrikhand", "montserrat";
 }
+@media screen and (min-width: 1025px) {
+  .menu__list__sections {
+    display: flex;
+  }
+}
+.menu__list--type {
+  text-transform: uppercase;
+}
+.menu__list--divider {
+  background-color: #99E2D0;
+  height: 4px;
+  width: 75px;
+}
+.menu__list--choice {
+  display: flex;
+  width: auto;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  margin: 10px auto 10px auto;
+  overflow: hidden;
+}
+.menu__list--choice--inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
+.menu__list--choice--inside div, .menu__list--choice--inside span {
+  padding: 10px 10px 10px 10px;
+}
+.menu__list--choice--inside--about {
+  min-width: 0;
+}
+.menu__list--choice--inside--price {
+  transform: translateX(50px);
+}
+.menu__list--choice--buy {
+  width: 50px;
+  background-color: #99E2D0;
+  transform: translateX(50px);
+}
+.menu__list--choice--buy--icon {
+  background-color: #ffffff;
+  padding: 2px 2px 2px 2px;
+  margin: 25px 10px 25px 10px;
+  border-radius: 15px;
+  color: #99E2D0;
+}
 
 /*# sourceMappingURL=style.css.map */
