@@ -1,0 +1,70 @@
+.choice {
+    @include desktop {
+        width: 30%;
+    }
+    h2 {
+        text-transform: uppercase;
+        margin: 0;
+    }
+    h3 {
+        font-family: "Roboto", "montserrat";
+        font-weight: bold;
+        margin: 0;
+    }
+    &__divider {
+        height: 4px;
+        width: 75px;
+        background-color: $color-tertiary;
+    }
+    &__meal {
+        &__box {
+            cursor: pointer;
+            display: flex;
+            width: auto;
+            background-color: $background;
+            border-radius: 20px;
+            box-shadow: 0px 6px 4px 3px #E3E3E3;
+            margin: 15px auto 15px auto;
+            overflow: hidden;
+            padding: 10px;
+            &:hover > .choice__meal__box--validation {
+                animation: get 0.5s forwards;
+            }
+            &:hover .choice__meal__box--validation--icon {
+                animation: icon-rotation 0.5s forwards;
+            }
+            &--description {
+                min-width: 0;
+                flex: 1;
+                p {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                h3 {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+            &--price {
+                font-weight: bold;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+            &--validation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70px;
+                margin: -10px -80px -10px 10px;
+                background-color: $color-tertiary;
+                &--icon {
+                    font-size: 30px;
+                    color: $background
+                }
+            }
+        }
+    }
+}
