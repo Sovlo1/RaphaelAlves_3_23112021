@@ -55,10 +55,7 @@
 }
 @keyframes box-appear {
   0% {
-    transform: translateY(100px);
-  }
-  80% {
-    opacity: 0.6;
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
@@ -135,7 +132,7 @@ li {
   height: 100%;
   z-index: 999;
   opacity: 0;
-  animation: loading 4s 1 forwards;
+  animation: loading 2s 1 forwards;
 }
 .loading__spinner {
   position: relative;
@@ -607,17 +604,17 @@ header a {
 .choice__meal__box--2 {
   opacity: 0;
   animation: box-appear 0.5s forwards;
-  animation-delay: 1.1s;
+  animation-delay: 1s;
 }
 .choice__meal__box--3 {
   opacity: 0;
   animation: box-appear 0.5s forwards;
-  animation-delay: 1.3s;
+  animation-delay: 1.1s;
 }
 .choice__meal__box--4 {
   opacity: 0;
   animation: box-appear 0.5s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1.2s;
 }
 .choice__meal__box--description {
   min-width: 0;
