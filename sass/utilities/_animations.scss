@@ -3,14 +3,17 @@
         transform-origin: bottom;
         transform: scale(0);
         color: $color-primary;
+        opacity: 1;
     }
     66% {
         transform: scale(1.1);
         color: $color-primary;
+        opacity: 1;
     }
     100% {
         transform: scale(1);
         color: $color-primary;
+        opacity: 1;
     }
 }
 
@@ -42,11 +45,8 @@
 }
 
 @keyframes icon-rotation {
-    0% {
-        transform: scale(0);
-    }
     100%  {
-        transform: scale(1) rotate(-360deg);
+        transform: rotate(720deg);
     }
 }
 

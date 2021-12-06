@@ -7,7 +7,7 @@
     height: 100%;
     z-index: 999;
     opacity: 0;
-    animation: loading 3s 1 forwards;
+    animation: loading 2*random(2)+s 1 forwards;
     &__spinner {
         position: relative;
         top: 50%;

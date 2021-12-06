@@ -28,6 +28,32 @@
             display: flex;
             justify-content: space-between;
             align-content: center;
+            &--button {
+                cursor: pointer;
+                &:hover > .menu__list__name--icon--regular {
+                    background: -webkit-linear-gradient($color-primary, $color-secondary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &:active > .menu__list__name--icon--solid {
+                    animation: fill-like 0.5s forwards;
+                }
+            }
+            &--icon {
+                &--solid {
+                    font-size: 32px;
+                    display: block;
+                    background: -webkit-linear-gradient($color-primary, $color-secondary);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 0;
+                }
+                &--regular {
+                    font-size: 32px;
+                    display: block;
+                    color: black;
+                }
+            }
             &--text {
                 font-weight: lighter;
                 font-family: "shrikhand", "montserrat";
@@ -36,7 +62,7 @@
     }
     &__button {
         background-color: $color-primary;
-        background-image: linear-gradient($color-secondary, rgba(255,255,255,0));
+        background-image: linear-gradient($color-secondary, rgba(255, 255, 255, 0));
         width: 200px;
         color: $background;
         padding: 20px 30px 20px 30px;
@@ -44,7 +70,7 @@
         margin: 0 auto 0 auto;
         border: none;
         border-radius: 32px 32px 32px 32px;
-        box-shadow: 0px 6px 4px 3px #E3E3E3;
+        box-shadow: 0px 6px 4px 3px #e3e3e3;
         text-align: center;
         a {
             color: inherit;

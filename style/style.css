@@ -3,14 +3,17 @@
     transform-origin: bottom;
     transform: scale(0);
     color: #9356DC;
+    opacity: 1;
   }
   66% {
     transform: scale(1.1);
     color: #9356DC;
+    opacity: 1;
   }
   100% {
     transform: scale(1);
     color: #9356DC;
+    opacity: 1;
   }
 }
 @keyframes loading-page {
@@ -38,11 +41,8 @@
   }
 }
 @keyframes icon-rotation {
-  0% {
-    transform: scale(0);
-  }
   100% {
-    transform: scale(1) rotate(-360deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes choice-appear {
@@ -135,7 +135,7 @@ li {
   height: 100%;
   z-index: 999;
   opacity: 0;
-  animation: loading 3s 1 forwards;
+  animation: loading 4s 1 forwards;
 }
 .loading__spinner {
   position: relative;
@@ -408,21 +408,26 @@ header a {
     bottom: 8%;
   }
 }
+.card__about--button:hover > .card__about--icon--regular {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__about--button:active > .card__about--icon--solid {
+  animation: fill-like 0.5s forwards;
+}
 .card__about--icon--solid {
   font-size: 32px;
-  background-color: #ffffff;
-  color: transparent;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
 .card__about--icon--regular {
   font-size: 32px;
+  display: block;
   color: black;
-}
-
-.fa-stack:hover > .card__about--icon--regular {
-  color: #9356DC;
-}
-.fa-stack:active > .card__about--icon--solid {
-  animation: fill-like 0.5s forwards;
 }
 
 .footer {
@@ -479,6 +484,30 @@ header a {
   justify-content: space-between;
   align-content: center;
 }
+.menu__list__name--button {
+  cursor: pointer;
+}
+.menu__list__name--button:hover > .menu__list__name--icon--regular {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__list__name--button:active > .menu__list__name--icon--solid {
+  animation: fill-like 0.5s forwards;
+}
+.menu__list__name--icon--solid {
+  font-size: 32px;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.menu__list__name--icon--regular {
+  font-size: 32px;
+  display: block;
+  color: black;
+}
 .menu__list__name--text {
   font-weight: lighter;
   font-family: "shrikhand", "montserrat";
@@ -493,7 +522,7 @@ header a {
   margin: 0 auto 0 auto;
   border: none;
   border-radius: 32px 32px 32px 32px;
-  box-shadow: 0px 6px 4px 3px #E3E3E3;
+  box-shadow: 0px 6px 4px 3px #e3e3e3;
   text-align: center;
 }
 .menu__button a {
