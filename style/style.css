@@ -45,6 +45,25 @@
     transform: scale(1) rotate(-360deg);
   }
 }
+@keyframes choice-appear {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes box-appear {
+  0% {
+    transform: translateY(100px);
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", "montserrat";
   margin: 0;
@@ -489,7 +508,7 @@ header a {
 
 @media screen and (min-width: 1025px) {
   .choice {
-    width: 30%;
+    width: 32%;
   }
 }
 .choice h2 {
@@ -501,10 +520,38 @@ header a {
   font-weight: bold;
   margin: 0;
 }
+.choice--1 h2 {
+  opacity: 0;
+  animation: choice-appear 0.5s forwards;
+}
+.choice--2 h2 {
+  opacity: 0;
+  animation: choice-appear 0.5s forwards;
+  animation-delay: 0.2s;
+}
+.choice--3 h2 {
+  opacity: 0;
+  animation: choice-appear 0.5s forwards;
+  animation-delay: 0.4s;
+}
 .choice__divider {
   height: 4px;
   width: 75px;
   background-color: #99E2D0;
+}
+.choice__divider--1 {
+  opacity: 0;
+  animation: choice-appear 0.5s forwards;
+}
+.choice__divider--2 {
+  opacity: 0;
+  animation: choice-appear 0.5s forwards;
+  animation-delay: 0.2s;
+}
+.choice__divider--3 {
+  opacity: 0;
+  animation: choice-appear 0.5s forwards;
+  animation-delay: 0.4s;
 }
 .choice__meal__box {
   cursor: pointer;
@@ -522,6 +569,26 @@ header a {
 }
 .choice__meal__box:hover .choice__meal__box--validation--icon {
   animation: icon-rotation 0.5s forwards;
+}
+.choice__meal__box--1 {
+  opacity: 0;
+  animation: box-appear 0.5s forwards;
+  animation-delay: 0.9s;
+}
+.choice__meal__box--2 {
+  opacity: 0;
+  animation: box-appear 0.5s forwards;
+  animation-delay: 1.1s;
+}
+.choice__meal__box--3 {
+  opacity: 0;
+  animation: box-appear 0.5s forwards;
+  animation-delay: 1.3s;
+}
+.choice__meal__box--4 {
+  opacity: 0;
+  animation: box-appear 0.5s forwards;
+  animation-delay: 1.5s;
 }
 .choice__meal__box--description {
   min-width: 0;
