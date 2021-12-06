@@ -132,7 +132,7 @@ li {
   height: 100%;
   z-index: 999;
   opacity: 0;
-  animation: loading 2s 1 forwards;
+  animation: loading 4s 1 forwards;
 }
 .loading__spinner {
   position: relative;
@@ -436,10 +436,6 @@ header a {
 @media screen and (min-width: 1025px) {
   .footer {
     text-align: center;
-  }
-  .footer ul {
-    display: flex;
-    justify-content: space-between;
   }
 }
 .footer__icon {
