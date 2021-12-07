@@ -184,6 +184,12 @@ li {
   animation: loading-page 1.5s infinite;
 }
 
+@media screen and (min-width: 1025px) {
+  .desktop__about__howto {
+    display: flex;
+  }
+}
+
 header {
   width: 100%;
   position: relative;
@@ -225,10 +231,17 @@ header a {
   z-index: -1;
   font-size: 21px;
   padding: 15px 0 15px 0;
+  /*Probably will delete*/
+}
+@media screen and (min-width: 1025px) {
+  .about__position {
+    background-color: #ffffff;
+  }
 }
 .about__discover {
   background-color: #f2f2f2;
   padding: 50px 0 70px 0;
+  /*Probably will delete*/
 }
 .about__discover p {
   margin: 15px 40px 0 40px;
@@ -236,6 +249,11 @@ header a {
 }
 .about__discover h1 {
   margin: 0 50px 0 50px;
+}
+@media screen and (min-width: 1025px) {
+  .about__discover {
+    background-color: #ffffff;
+  }
 }
 .about__button {
   display: block;
@@ -260,15 +278,15 @@ header a {
 .howto {
   width: 90%;
   margin: 70px auto 70px auto;
+  /*&__buttons {
+      @include desktop {
+          display: flex;
+          justify-content: space-between;
+      }
+  }*/
 }
 .howto h1 {
   margin-bottom: 10px;
-}
-@media screen and (min-width: 1025px) {
-  .howto__buttons {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 .howto__button {
   display: flex;

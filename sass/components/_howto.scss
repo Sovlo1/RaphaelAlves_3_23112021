@@ -4,12 +4,12 @@
     h1 {
         margin-bottom: 10px;
     }
-    &__buttons {
+    /*&__buttons {
         @include desktop {
             display: flex;
             justify-content: space-between;
         }
-    }
+    }*/
     &__button {
         display: flex;
         align-items: center;
