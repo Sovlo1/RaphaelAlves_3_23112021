@@ -26,6 +26,7 @@
         }
     }
     &__button {
+        display: block;
         background-color: $color-primary;
         background-image: linear-gradient($color-secondary, rgba(255,255,255,0));
         width: 300px;
@@ -36,9 +37,6 @@
         border: none;
         border-radius: 32px 32px 32px 32px;
         box-shadow: 0px 6px 4px 3px #E3E3E3;
-        a {
-            color: inherit;
-        }
         &:hover {
             transition: 1s;
             background-color: lighten($color: $color-primary, $amount: 10);

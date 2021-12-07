@@ -3,8 +3,9 @@
         width: 32%;
     }
     h2 {
+        font-weight: normal;
         text-transform: uppercase;
-        margin: 0;
+        margin: 20px 0 0 0;
     }
     h3 {
         font-family: "Roboto", "montserrat";
@@ -48,6 +49,19 @@
             opacity: 0;
             animation: choice-appear 0.5s forwards;
             animation-delay: 0.4s;
+        }
+        &--vertical {
+            align-self: center;
+            height: 180px;
+            width: 2px;
+            background:linear-gradient($color-primary, $color-secondary);
+            opacity: 0;
+            display: none;
+            @include desktop {
+                display: block;
+                animation: divider-appear 0.5s forwards;
+                animation-delay: 1s;
+            }
         }
     }
     &__meal {

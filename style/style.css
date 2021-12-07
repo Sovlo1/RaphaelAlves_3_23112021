@@ -61,6 +61,14 @@
     opacity: 1;
   }
 }
+@keyframes divider-appear {
+  0% {
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 body {
   font-family: "Roboto", "montserrat";
   margin: 0;
@@ -132,7 +140,7 @@ li {
   height: 100%;
   z-index: 999;
   opacity: 0;
-  animation: loading 4s 1 forwards;
+  animation: loading 3s 1 forwards;
 }
 .loading__spinner {
   position: relative;
@@ -230,6 +238,7 @@ header a {
   margin: 0 50px 0 50px;
 }
 .about__button {
+  display: block;
   background-color: #9356DC;
   background-image: linear-gradient(#FF79DA, rgba(255, 255, 255, 0));
   width: 300px;
@@ -240,9 +249,6 @@ header a {
   border: none;
   border-radius: 32px 32px 32px 32px;
   box-shadow: 0px 6px 4px 3px #E3E3E3;
-}
-.about__button a {
-  color: inherit;
 }
 .about__button:hover {
   transition: 1s;
@@ -506,6 +512,7 @@ header a {
   font-family: "shrikhand", "montserrat";
 }
 .menu__button {
+  display: block;
   background-color: #9356DC;
   background-image: linear-gradient(#FF79DA, rgba(255, 255, 255, 0));
   width: 200px;
@@ -534,8 +541,9 @@ header a {
   }
 }
 .choice h2 {
+  font-weight: normal;
   text-transform: uppercase;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 .choice h3 {
   font-family: "Roboto", "montserrat";
@@ -574,6 +582,21 @@ header a {
   opacity: 0;
   animation: choice-appear 0.5s forwards;
   animation-delay: 0.4s;
+}
+.choice__divider--vertical {
+  align-self: center;
+  height: 180px;
+  width: 2px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  opacity: 0;
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .choice__divider--vertical {
+    display: block;
+    animation: divider-appear 0.5s forwards;
+    animation-delay: 1s;
+  }
 }
 .choice__meal__box {
   cursor: pointer;

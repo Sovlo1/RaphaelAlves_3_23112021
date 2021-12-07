@@ -67,3 +67,12 @@
         opacity: 1;
     }
 }
+
+@keyframes divider-appear {
+    0% {
+        transform: translateY(150px)
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
