@@ -48,9 +48,6 @@
             @include desktop {
                 padding-right: 30px;
             }
-            &--3 {
-                background-color: lighten($color: $color-primary, $amount: 35);
-            }
         }
         &--icon {
             margin: 0 35px 0 35px;
