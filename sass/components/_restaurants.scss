@@ -89,7 +89,7 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            &:active > .card__about--icon--solid {
+            &:hover > .card__about--icon--solid {
                 animation: fill-like 0.5s forwards;
             }
         }

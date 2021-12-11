@@ -1,9 +1,13 @@
 .menu {
     background-color: darken($color: $background, $amount: 5);
-    padding-bottom: 20px;
+    @include desktop {
+        background-color: $background;
+    }
     &__all {
         padding: 0px 20px 50px 20px;
         @include desktop {
+            background-color: darken($color: $background, $amount: 5);
+            margin: 0 50px 0 50px;
             display: flex;
             justify-content: space-between;
         }
@@ -11,19 +15,30 @@
     &__image {
         position: relative;
         z-index: 1;
-        height: 400px;
+        height: 500px;
         width: 100%;
         object-fit: cover;
-        margin: 0 0 -50px 0;
+        margin: 0 0 -100px 0;
+        &--smoothing {
+            position: absolute;
+            z-index: 2;
+            top: 480px;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(rgba(255, 255, 255, 0), $background);
+        }
     }
     &__list {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         width: auto;
         background-color: darken($color: $background, $amount: 5);
         margin: 0;
         padding: 50px 20px 50px 20px;
         border-radius: 50px 50px 0 0;
+        @include desktop {
+            margin: 0 50px 0 50px;
+        }
         &__name {
             display: flex;
             justify-content: space-between;
@@ -35,7 +50,7 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
-                &:active > .menu__list__name--icon--solid {
+                &:hover > .menu__list__name--icon--solid {
                     animation: fill-like 0.5s forwards;
                 }
             }
@@ -61,26 +76,31 @@
         }
     }
     &__button {
-        display: block;
-        background-color: $color-primary;
-        background-image: linear-gradient($color-secondary, rgba(255, 255, 255, 0));
-        width: 200px;
-        color: $background;
-        padding: 20px 30px 20px 30px;
-        font-size: 21px;
-        margin: 0 auto 0 auto;
-        border: none;
-        border-radius: 32px 32px 32px 32px;
-        box-shadow: 0px 6px 4px 3px #e3e3e3;
-        text-align: center;
-        a {
-            color: inherit;
-        }
-        &:hover {
-            transition: 1s;
-            background-color: lighten($color: $color-primary, $amount: 10);
-            box-shadow: 0px 6px 4px 3px #d4d4d4;
-            cursor: pointer;
+        padding: 0 0 50px 0;
+        margin: 0 50px 0 50px;
+        background-color: darken($color: $background, $amount: 5);
+        &--link {
+            display: block;
+            background-color: $color-primary;
+            background-image: linear-gradient($color-secondary, rgba(255, 255, 255, 0));
+            width: 200px;
+            color: $background;
+            padding: 20px 30px 20px 30px;
+            font-size: 21px;
+            margin: 0 auto 0 auto;
+            border: none;
+            border-radius: 32px 32px 32px 32px;
+            box-shadow: 0px 6px 4px 3px #e3e3e3;
+            text-align: center;
+            a {
+                color: inherit;
+            }
+            &:hover {
+                transition: 1s;
+                background-color: lighten($color: $color-primary, $amount: 10);
+                box-shadow: 0px 6px 4px 3px #d4d4d4;
+                cursor: pointer;
+            }
         }
     }
 }
