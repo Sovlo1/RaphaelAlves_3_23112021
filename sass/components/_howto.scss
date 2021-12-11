@@ -41,6 +41,9 @@
             @include desktop {
                 padding-right: 30px;
             }
+            &--3 {
+                background-color: lighten($color: $color-primary, $amount: 35);
+            }
         }
         &--icon {
             margin: 0 35px 0 35px;
@@ -49,6 +52,9 @@
             @include desktop {
                 font-size: 17px;
                 margin: 0 20px 0 30px;
+            }
+            &--final {
+                color: $color-primary;
             }
         }
     }

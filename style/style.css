@@ -309,6 +309,9 @@ header a {
     padding-right: 30px;
   }
 }
+.howto__button--about--3 {
+  background-color: #f2eafb;
+}
 .howto__button--icon {
   margin: 0 35px 0 35px;
   color: gray;
@@ -319,6 +322,9 @@ header a {
     font-size: 17px;
     margin: 0 20px 0 30px;
   }
+}
+.howto__button--icon--final {
+  color: #9356DC;
 }
 
 .restaurants {
@@ -338,6 +344,11 @@ header a {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1600px) {
+  .restaurants__cards {
+    display: flex;
+  }
+}
 
 .card {
   position: relative;
@@ -353,6 +364,11 @@ header a {
 @media screen and (min-width: 1025px) {
   .card {
     width: 48%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .card {
+    width: 24%;
   }
 }
 .card__link {
@@ -390,7 +406,12 @@ header a {
 }
 @media screen and (min-width: 1025px) {
   .card__img {
-    height: 350px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .card__img {
+    height: 250px;
   }
 }
 .card__about {
