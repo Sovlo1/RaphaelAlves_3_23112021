@@ -718,7 +718,7 @@ header a {
   justify-content: center;
   align-items: center;
   width: 90px;
-  margin: -15px -105px -15px 15px;
+  margin: -15px -105px -15px 20px;
   background-color: #99E2D0;
 }
 .choice__meal__box--validation--icon {
