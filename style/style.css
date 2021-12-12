@@ -66,9 +66,24 @@
     opacity: 0.5;
   }
 }
+@keyframes hide-scroll {
+  0% {
+    overflow-y: hidden;
+  }
+  99% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
 body {
   font-family: "Roboto", "montserrat";
   margin: 0;
+}
+
+.frontpage {
+  animation: hide-scroll 2.5s forwards;
 }
 
 h1, p, h2 {
@@ -137,7 +152,7 @@ li {
   height: 100%;
   z-index: 999;
   opacity: 0;
-  animation: loading 3s 1 forwards;
+  animation: loading 3s forwards;
 }
 .loading__spinner {
   position: relative;
