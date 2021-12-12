@@ -5,7 +5,8 @@
     h2 {
         font-weight: normal;
         text-transform: uppercase;
-        margin: 20px 0 0 0;
+        margin: 0;
+        padding: 15px 0 0 0;
     }
     h3 {
         font-family: "Roboto", "montserrat";
@@ -131,8 +132,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 90px;
-                margin: -15px -105px -15px 20px;
+                width: 75px;
+                margin: -15px -90px -15px 20px;
                 background-color: $color-tertiary;
                 &--icon {
                     font-size: 30px;
