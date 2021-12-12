@@ -200,10 +200,10 @@ header a {
 }
 
 .home {
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 21.5px;
+  left: 25px;
 }
 
 .about {
