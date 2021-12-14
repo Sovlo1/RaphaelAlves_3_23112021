@@ -87,6 +87,7 @@
             &:hover > .card__about--icon--regular {
                 background: -webkit-linear-gradient($color-primary, $color-secondary);
                 -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             &:hover > .card__about--icon--solid {
@@ -99,6 +100,7 @@
                 display: block;
                 background: -webkit-linear-gradient($color-primary, $color-secondary);
                 -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
                 opacity: 0;
             }
