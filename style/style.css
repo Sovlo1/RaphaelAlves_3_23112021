@@ -561,6 +561,7 @@ header a {
 .menu__list__name--button:hover > .menu__list__name--icon--regular {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu__list__name--button:hover > .menu__list__name--icon--solid {
@@ -571,6 +572,7 @@ header a {
   display: block;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
