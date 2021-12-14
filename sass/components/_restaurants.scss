@@ -84,6 +84,7 @@
             @include desktop {
                 bottom: 8%;
             }
+            &--icon {
             &:hover > .card__about--icon--regular {
                 background: -webkit-linear-gradient($color-primary, $color-secondary);
                 -webkit-background-clip: text;
@@ -93,6 +94,7 @@
             &:hover > .card__about--icon--solid {
                 animation: fill-like 0.5s forwards;
             }
+        }
         }
         &--icon {
             &--solid {

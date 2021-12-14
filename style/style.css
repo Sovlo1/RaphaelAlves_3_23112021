@@ -448,13 +448,13 @@ header a {
     bottom: 8%;
   }
 }
-.card__about--button:hover > .card__about--icon--regular {
+.card__about--button--icon:hover > .card__about--icon--regular {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card__about--button:hover > .card__about--icon--solid {
+.card__about--button--icon:hover > .card__about--icon--solid {
   animation: fill-like 0.5s forwards;
 }
 .card__about--icon--solid {
