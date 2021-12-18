@@ -32,16 +32,18 @@
     visibility: hidden;
   }
 }
+/*Old box animation
 @keyframes get {
-  100% {
-    margin-right: -15px;
-  }
+    100% {
+        margin-right: -15px;
+    }
 }
+
 @keyframes icon-rotation {
-  100% {
-    transform: rotate(720deg);
-  }
-}
+    100%  {
+        transform: rotate(720deg);
+    }
+}*/
 @keyframes choice-appear {
   0% {
     transform: translateX(-300px);
@@ -696,7 +698,7 @@ header a {
   padding: 15px;
 }
 .choice__meal__box:hover > .choice__meal__box--validation {
-  animation: get 0.5s forwards;
+  margin: -15px -15px -15px 20px;
 }
 .choice__meal__box:hover .choice__meal__box--validation--icon {
   animation: icon-rotation 0.5s forwards;
@@ -750,6 +752,7 @@ header a {
   width: 75px;
   margin: -15px -90px -15px 20px;
   background-color: #99E2D0;
+  transition: margin 0.5s;
 }
 .choice__meal__box--validation--icon {
   font-size: 30px;

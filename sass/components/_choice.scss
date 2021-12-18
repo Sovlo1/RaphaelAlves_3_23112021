@@ -81,7 +81,7 @@
             overflow: hidden;
             padding: 15px;
             &:hover > .choice__meal__box--validation {
-                animation: get 0.5s forwards;
+                margin: -15px -15px -15px 20px;
             }
             &:hover .choice__meal__box--validation--icon {
                 animation: icon-rotation 0.5s forwards;
@@ -135,6 +135,7 @@
                 width: 75px;
                 margin: -15px -90px -15px 20px;
                 background-color: $color-tertiary;
+                transition: margin 0.5s;
                 &--icon {
                     font-size: 30px;
                     color: $background
