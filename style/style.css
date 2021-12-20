@@ -37,13 +37,12 @@
     100% {
         margin-right: -15px;
     }
-}
-
-@keyframes icon-rotation {
-    100%  {
-        transform: rotate(720deg);
-    }
 }*/
+@keyframes icon-rotation {
+  100% {
+    transform: rotate(720deg);
+  }
+}
 @keyframes choice-appear {
   0% {
     transform: translateX(-300px);
